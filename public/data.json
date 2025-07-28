@@ -1,0 +1,207 @@
+{
+  "trending": [
+    {
+      "images": [
+        "trending/dog1.png",
+        "trending/cat1.png",
+        "trending/bear1.png"
+      ],
+      "count": "1025+",
+      "title": "DSGN Animals",
+      "author": {
+        "ava": "avatars/mrfox.png",
+        "name": "MrFox"
+      }
+    },
+    {
+      "images": [
+        "trending/mushroom1.png",
+        "trending/mushroom2.png",
+        "trending/mushroom3.png"
+      ],
+      "count": "1025+",
+      "title": "Magic Mushrooms",
+      "author": {
+        "ava": "avatars/shroomie.png",
+        "name": "Shroomie"
+      }
+    },
+    {
+      "images": [
+        "trending/bot1.png",
+        "trending/bot2.png",
+        "trending/bot3.png"
+      ],
+      "count": "1025+",
+      "title": "Disco Machines",
+      "author": {
+        "ava": "avatars/bekind2robots.png",
+        "name": "BeKind2Robots"
+      }
+    }
+  ],
+  "creators": [
+    {
+      "position": "1",
+      "ava": "avatars/keepitreal.png",
+      "name": "Keepitreal",
+      "amount": "34.53 ETH"
+    },
+    {
+      "position": "2",
+      "ava": "avatars/digilab.png",
+      "name": "DigiLab",
+      "amount": "34.53 ETH"
+    },
+    {
+      "position": "3",
+      "ava": "avatars/gravityone.png",
+      "name": "GravityOne",
+      "amount": "34.53 ETH"
+    },
+    {
+      "position": "4",
+      "ava": "avatars/juanie.png",
+      "name": "Juanie",
+      "amount": "34.53 ETH"
+    },
+    {
+      "position": "5",
+      "ava": "avatars/bluewhale.png",
+      "name": "BlueWhale",
+      "amount": "34.53 ETH"
+    },
+    {
+      "position": "6",
+      "ava": "avatars/mrfox.png",
+      "name": "Mr Fox",
+      "amount": "34.53 ETH"
+    },
+    {
+      "position": "7",
+      "ava": "avatars/shroomie.png",
+      "name": "Shroomie",
+      "amount": "34.53 ETH"
+    },
+    {
+      "position": "8",
+      "ava": "avatars/robotica.png",
+      "name": "Robotica",
+      "amount": "34.53 ETH"
+    },
+    {
+      "position": "9",
+      "ava": "avatars/rustyrobot.png",
+      "name": "RustyRobot",
+      "amount": "34.53 ETH"
+    },
+    {
+      "position": "10",
+      "ava": "avatars/animakid.png",
+      "name": "Animakid",
+      "amount": "34.53 ETH"
+    },
+    {
+      "position": "11",
+      "ava": "avatars/dotgu.png",
+      "name": "Dotgu",
+      "amount": "34.53 ETH"
+    },
+    {
+      "position": "12",
+      "ava": "avatars/ghiblier.png",
+      "name": "Ghiblier",
+      "amount": "34.53 ETH"
+    }
+  ],
+  "categories": [
+    {
+      "img": "categories/art.png",
+      "icon": "icons/art.svg",
+      "title": "Art"
+    },
+    {
+      "img": "categories/collectibles.png",
+      "icon": "icons/collectibles.svg",
+      "title": "Collectibles"
+    },
+    {
+      "img": "categories/music.png",
+      "icon": "icons/music.svg",
+      "title": "Music"
+    },
+    {
+      "img": "categories/photography.png",
+      "icon": "icons/photography.svg",
+      "title": "Photography"
+    },
+    {
+      "img": "categories/video.png",
+      "icon": "icons/video.svg",
+      "title": "Video"
+    },
+    {
+      "img": "categories/utility.png",
+      "icon": "icons/utility.svg",
+      "title": "Utility"
+    },
+    {
+      "img": "categories/sport.png",
+      "icon": "icons/sport.svg",
+      "title": "Sport"
+    },
+    {
+      "img": "categories/virtual-worlds.png",
+      "icon": "icons/virtual-worlds.svg",
+      "title": "Virtual Worlds"
+    }
+  ],
+  "discover": [
+    {
+      "img": "discover/distant-galaxy.png",
+      "title": "Distant Galaxy",
+      "author": {
+        "ava": "avatars/moon-dancer.png",
+        "name": "MoonDancer"
+      },
+      "price": "1.63 ETH",
+      "bid": "0.33 wETH"
+    },
+    {
+      "img": "discover/life-on-edena.png",
+      "title": "Life on Edena",
+      "author": {
+        "ava": "avatars/nebulukid.png",
+        "name": "Nebulukid"
+      },
+      "price": "1.63 ETH",
+      "bid": "0.33 wETH"
+    },
+    {
+      "img": "discover/astro-fiction.png",
+      "title": "AstroFiction",
+      "author": {
+        "ava": "avatars/space-one.png",
+        "name": "SpaceOne"
+      },
+      "price": "1.63 ETH",
+      "bid": "0.33 wETH"
+    }
+  ],
+  "promo": {
+    "img": "promo/magic-mashrooms.png",
+    "title": "Magic Mashrooms",
+    "author": {
+      "ava": "avatars/shroomie.png",
+      "name": "Shroomie"
+    }
+  },
+  "footer": {
+    "img": "promo/distant-galaxy.png",
+    "title": "Distant Galaxy",
+    "author": {
+      "ava": "avatars/moon-dancer.png",
+      "name": "MoonDancer"
+    }
+  }
+}
