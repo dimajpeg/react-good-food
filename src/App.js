@@ -14,11 +14,17 @@ function App() {
   const [data, setData] = useState({});
   const{trending, creators, categories, discover, promo, footer} = data
   
-  useEffect(() => {
-    fetch('data.json')
+  useEffect( () => {
+      fetch('data.json')
       .then(response => response.json())
       .then(data => setData(data));
   }, []);
+
+  // useEffect( async () => {
+  //   const response = await fetch('data.json')
+  //   const data = await response.json()
+  //   setData(data);
+  // }, []);
 
   return (
     <div>
