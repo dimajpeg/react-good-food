@@ -1,6 +1,7 @@
 import React from "react";
+import CreatorCard from "../CreatorCard/CreatorCard";
 
-function TopCreators() {
+function TopCreators({ data: creators = [] }) {
   return (
     <section className="top-creators">
       <div className="container">
@@ -13,18 +14,17 @@ function TopCreators() {
         </header>
 
         <ul className="creators">
-          <li className="creator">
-            <i className="position">1</i>
-            <img src="" alt="" className="ava" />
-              <h4 className="name">Keepitreal</h4>
-              <div className="row">
-                <span>Total Sales:</span>
-                <span className="amount">34.53 ETH</span>
-              </div>
-          </li>
-        </ul>
-      </div>
-    </section>
+          {/* 2. Запускаем "конвейер" .map() по массиву creators */}
+          {creators.map((creatorObject) => (
+            // 3. Для каждого объекта создаем компонент CreatorCard
+            <CreatorCard
+              key={creatorObject.position} // Уникальный ключ
+              creator={creatorObject}      // Передаем ВЕСЬ объект создателя в prop 'creator'
+            />
+          ))}
+      </ul>
+    </div>
+    </section >
   )
 }
 export default TopCreators
