@@ -1,6 +1,7 @@
 import React from "react";
+import NftCard from "../NftCard/NftCard"
 
-function Discover() {
+function Discover({ data: nfts = [] }) {
   return (
     <section className="discover">
       <div className="container">
@@ -12,26 +13,12 @@ function Discover() {
           <button>See All</button>
         </header>
         <ul className="nfts">
-          <li className="nft">
-            <img src="" alt=""/>
-              <div className="content">
-                <h4>Distant Galaxy</h4>
-                <div className="author">
-                  <img src="" alt="" className="ava"/>
-                    <span className="name">MoonDancer</span>
-                </div>
-                <div className="row">
-                  <div className="column">
-                    <span>Price</span>
-                    <span className="price">1.63 ETH</span>
-                  </div>
-                  <div className="column">
-                    <span>Highest Bid</span>
-                    <span className="bid">0.33 wETH</span>
-                  </div>
-                </div>
-              </div>
-          </li>
+        {nfts.map((nftObject) => (
+          <NftCard
+          key={nftObject.title}
+          nft={nftObject} 
+        />
+      ))}
         </ul>
       </div>
     </section>
