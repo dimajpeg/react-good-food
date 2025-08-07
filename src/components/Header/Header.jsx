@@ -1,29 +1,33 @@
 // Файл: src/components/Header/Header.jsx
 
 import React from 'react';
+import styles from './Header.module.css';
 
 function Header() {
   return (
-    <header>
-      <div className="container">
-        <a href="#" className="logo">
-          <img src="" alt="" />
+    <header className={styles.header}>
+      <div className={styles.container}>
+        <a href="/" className={styles.logo}>
+          <img src="/images/icons/logo.png" alt="logo" />
           <h1>NFT Marketplace</h1>
         </a>
-        <nav>
+        <nav className={styles.nav}>
           <ul>
             <li>
-              <a href="#">Marketplace</a>
+              <a href="/">Marketplace</a>
             </li>
             <li>
-              <a href="#">Rankings</a>
+              <a href="/">Rankings</a>
             </li>
             <li>
-              <a href="#">Connect a wallet</a>
+              <a href="/">Connect a wallet</a>
             </li>
           </ul>
         </nav>
-        <button type="button">Sign Up</button>
+        <button type="button" className={styles.button}>
+          <img src="/images/icons/user.png" alt="logo" className={styles.user} />
+          Sign Up
+        </button>
       </div>
     </header>
   );

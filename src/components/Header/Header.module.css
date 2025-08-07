@@ -1,0 +1,87 @@
+header {
+  background: var(--background);
+  padding: 20px 50px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Распределит элементы по краям */
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 32px;
+  height: 32px;
+}
+
+.logo h1 {
+  font-family: var(--second-family); /* Используем наш глобальный шрифт */
+  font-size: 22px; /* По макету шрифт чуть больше */
+  color: var(--text-primary); /* Используем глобальный цвет */
+  margin: 0;
+}
+
+
+.nav ul {
+  display: flex;
+  gap: 10px;
+  list-style: none; /* Убираем точки у списка */
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.nav a {
+  display: block; /* Чтобы padding работал корректно */
+  padding: 12px 20px;
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-primary);
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.nav a:hover {
+  background-color: var(--background-secondary);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  
+  height: 60px;
+  padding: 0 30px;
+  
+  background: var(--call-to-action);
+  border-radius: 20px;
+  border: none; /* Убираем стандартную рамку у кнопки */
+  cursor: pointer; /* Делаем курсор-ручку при наведении */
+  
+  /* Стили для текста */
+  color: var(--text-primary);
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.user {
+  width: 20px;
+  height: 20px;
+}

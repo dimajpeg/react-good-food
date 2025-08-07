@@ -8,12 +8,12 @@ function Categories({ data: categories = [] }) {
         <h2>Browse Categories</h2>
 
         <ul className="cats">
-        {categories.map((categoryObject) => (
-          <CategoryCard 
-          key={categoryObject.title} 
-          category={categoryObject}
-          />
-        ))}
+          {categories.map((categoryObject) => (
+            <CategoryCard
+              key={categoryObject.title}
+              category={categoryObject}
+            />
+          ))}
         </ul>
       </div>
     </section>
