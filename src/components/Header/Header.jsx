@@ -23,11 +23,11 @@ function Header() {
               <a href="/">Connect a wallet</a>
             </li>
           </ul>
-        </nav>
-        <button type="button" className={styles.button}>
+          <button type="button" className={styles.button}>
           <img src="/images/icons/user.png" alt="logo" className={styles.user} />
           Sign Up
         </button>
+        </nav>
       </div>
     </header>
   );

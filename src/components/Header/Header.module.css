@@ -4,7 +4,7 @@ header {
 }
 
 .container {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
 
   display: flex;
@@ -26,10 +26,10 @@ header {
 }
 
 .logo h1 {
-  font-family: var(--second-family); /* Используем наш глобальный шрифт */
-  font-size: 22px; /* По макету шрифт чуть больше */
-  color: var(--text-primary); /* Используем глобальный цвет */
+  font-family: var(--second-family); 
+  font-size: 21px;
   margin: 0;
+  color: var(--text);
 }
 
 
@@ -41,6 +41,11 @@ header {
   margin: 0;
 }
 
+nav{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
 
 .nav a {
@@ -49,7 +54,7 @@ header {
   font-family: var(--second-family);
   font-weight: 600;
   font-size: 16px;
-  color: var(--text-primary);
+  color: var(--text);
   text-decoration: none;
   border-radius: 20px;
   transition: background-color 0.3s;
@@ -59,7 +64,7 @@ header {
   background-color: var(--background-secondary);
 }
 
-.button {
+.nav button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,14 +79,14 @@ header {
   cursor: pointer; /* Делаем курсор-ручку при наведении */
   
   /* Стили для текста */
-  color: var(--text-primary);
+  color: var(--text);
   font-family: var(--second-family);
   font-weight: 600;
   font-size: 16px;
   text-decoration: none;
 }
 
-.user {
+.nav user {
   width: 20px;
   height: 20px;
 }
