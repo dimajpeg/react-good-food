@@ -1,13 +1,17 @@
 import React from 'react';
+import styles from './Hero.module.css';
 
 function Hero() {
   return (
-    <section className="hero">
-      <div className="container">
-        <div className="content">
+    <section className={styles.hero}>
+      <div className={styles.container}>
+        <div className={styles.content}>
           <h2>Discover digital art & Collect NFTs</h2>
           <p>NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
-          <button>Get Started</button>
+          <button>
+            <img src="/images/icons/rocket.png" alt="rocket" />
+            Get Started
+          </button>
 
           <ul className="counters">
             <li>
@@ -24,18 +28,19 @@ function Hero() {
             </li>
           </ul>
         </div>
-      </div>
-
-      <figure>
-        <img src="" alt=""/>
+        <figure>
+          <img src="/images/promo/space-walking.png" alt="space-walking" className={styles.img} />
           <figcaption>
             <b>Space Walking</b>
-            <div className="author">
-              <img src="" alt="" className="ava"/>
-                <span>Animakid</span>
+            <div className={styles.author}>
+              <img src="/images/avatars/animakid.png" alt="animakid" className={styles.ava} />
+              <span>Animakid</span>
             </div>
           </figcaption>
-      </figure>
+        </figure>
+      </div>
+
+
     </section>
   );
 }

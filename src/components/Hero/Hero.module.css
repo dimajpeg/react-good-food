@@ -1,0 +1,184 @@
+.hero {
+  padding: 80px 115px;
+  width: 510px;
+  height: 544px;
+}
+
+.hero .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 30px;
+  height: 544px;
+
+}
+
+.hero .content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 30px;
+  height: 544px;
+}
+
+.hero .content h2 {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 67px;
+  line-height: 110%;
+  text-transform: capitalize;
+  color: var(--text);
+  margin: 0;
+}
+
+.hero .content p {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: var(--text);
+  margin: 0;
+}
+
+.hero .content button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  height: 60px;
+  padding: 0 50px;
+
+  background: var(--call-to-action);
+  border-radius: 20px;
+  border: none;
+  /* Убираем стандартную рамку у кнопки */
+  cursor: pointer;
+  /* Делаем курсор-ручку при наведении */
+
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: var(--text);
+}
+
+.hero .content ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 30px;
+  border-radius: 20px;
+  width: 510px;
+  height: 77px;
+
+  padding: 0;
+  margin: 0;
+
+}
+
+.hero .content ul li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0px;
+
+  border-radius: 20px;
+  width: 150px;
+  height: 77px;
+}
+
+.hero .content ul li b {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 140%;
+  text-transform: capitalize;
+  color: var(--text);
+  margin: 0;
+}
+
+.hero .content ul li span {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: var(--text);
+  margin: 0;
+}
+
+.hero figure {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0px;
+  width: 510px;
+  height: 510px;
+  margin: 0;
+}
+
+.hero figure .img {
+  border-radius: 20px 20px 0 0;
+  width: 510px;
+  height: 401px;
+}
+
+.hero figure figcaption {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 0 0 20px 20px;
+  padding: 20px;
+  /* width: 510px; */
+  height: 109px;
+  background: var(--background---secondary);
+}
+
+.hero figure figcaption b {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  text-transform: capitalize;
+  color: var(--text);
+  margin: 0;
+}
+
+.hero figure figcaption .author {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 12px;
+  border-radius: 20px;
+  width: 470px;
+  height: 24px;
+}
+
+.hero figure figcaption .author .ava {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.hero figure figcaption .author span {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--text);
+}
