@@ -28,6 +28,7 @@ function Hero() {
             </li>
           </ul>
         </div>
+        
         <figure>
           <img src="/images/promo/space-walking.png" alt="space-walking" className={styles.img} />
           <figcaption>
@@ -39,8 +40,6 @@ function Hero() {
           </figcaption>
         </figure>
       </div>
-
-
     </section>
   );
 }

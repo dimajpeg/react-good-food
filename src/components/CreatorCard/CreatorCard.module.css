@@ -1,0 +1,75 @@
+.creator {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  height: 238px;
+  width: 240px;
+  background: var(--background---secondary);
+  position: relative;
+}
+
+.position {
+  text-align: center;
+  align-content: center;
+  border-radius: 20px;
+  height: 30px;
+  width: 30px;
+  background: var(--background);
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  font-style: normal;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--caption-label-text);
+}
+
+.ava {
+  border-radius: 100px;
+  width: 120px;
+  height: 120px;
+}
+
+.name {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--text);
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  height: 22px;
+}
+
+.row span {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: right;
+  color: var(--caption-label-text);
+}
+
+.row .amount {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--text);
+}

@@ -1,0 +1,131 @@
+.trending {
+  padding: 80px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 60px;
+  /* width: 1280px; */
+  height: 836px;
+  box-sizing: border-box;
+
+}
+
+.trending .container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.trending h2 {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: var(--text);
+  margin: 0;
+}
+
+.trending p {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: var(--text);
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.trending ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 30px;
+  height: 525px;
+  padding: 0;
+  margin: 0;
+}
+
+.trending ul li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 20px;
+  height: 525px;
+}
+
+.trending ul li img {
+  border-radius: 20px;
+  height: 330px;
+}
+
+.trending ul li .ribbon {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 15px;
+  height: 100px;
+}
+
+.trending ul li .ribbon img {
+  border-radius: 20px;
+  height: 100px;
+}
+
+.trending ul li .ribbon .count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 20px;
+  padding: 32px 15px;
+  background: var(--call-to-action);
+
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--text);
+}
+
+.trending ul li .title {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  text-transform: capitalize;
+  color: var(--text);
+  margin: 0;
+}
+
+.trending ul li .author {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 12px;
+  border-radius: 20px;
+  height: 24px;
+}
+
+.trending ul li .author img {
+  border-radius: 100px;
+  height: 24px;
+}
+
+.trending ul li .author .name {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--text);
+}

@@ -14,19 +14,19 @@ function Header() {
         <nav className={styles.nav}>
           <ul>
             <li>
-              <a href="/">Marketplace</a>
+              <a href="#3">Marketplace</a>
             </li>
             <li>
-              <a href="/">Rankings</a>
+              <a href="#3">Rankings</a>
             </li>
             <li>
-              <a href="/">Connect a wallet</a>
+              <a href="##">Connect a wallet</a>
             </li>
           </ul>
           <button type="button" className={styles.button}>
-          <img src="/images/icons/user.png" alt="logo" className={styles.user} />
-          Sign Up
-        </button>
+            {/* <img src="/images/icons/user.png" alt="logo" className={styles.user} /> */}
+            Sign Up
+          </button>
         </nav>
       </div>
     </header>
