@@ -1,35 +1,38 @@
 import React from "react";
+import styles from "./Promo.module.css";
 
 const basePath = "./images/";
 
 function Promo({ data: promo = {} }) {
 
-  const author = promo.author || {};  
-  
+  const author = promo.author || {};
+
   return (
-    <section className="promo">
-      <img src={basePath + promo.img} alt="" className="bg" />
-      <div className="container">
-        <div className="content">
-          <div className="author">
-            <img src={basePath + author.ava} alt={author.name} className="ava" />
-            <span className="name">{author.name}</span>
+    <section className={styles.promo}>
+      <img src={basePath + promo.img} alt="" className={styles.bg} />
+      <div className={styles.container}>
+        <div className={styles.content}>
+          <div className={styles.author}>
+            <img src={basePath + author.ava} alt={author.name} className={styles.ava} />
+            <span className={styles.name}>{author.name}</span>
           </div>
-        
+
           <h3>{promo.title}</h3>
-          <button type="button">See NFT</button>
+          <button type="button">
+            <img src="/images/icons/eye.svg" alt="eye" />See NFT
+          </button>
         </div>
-        
-        <div className="countdown">
+
+        <div className={styles.countdown}>
           <span>Auction ends in:</span>
           <time dateTime="2025-12-31">
-            <b className="hours">59</b>
-            :
-            <b className="minutes">59</b>
-            :
-            <b className="seconds">59</b>
+            <b className={styles.hours}>59</b>
+            <b className={styles.colon}>:</b>
+            <b className={styles.minutes}>59</b>
+            <b className={styles.colon}>:</b>
+            <b className={styles.seconds}>59</b>
           </time>
-          <div className="row">
+          <div className={styles.row}>
             <span>Hours</span>
             <span>Minutes</span>
             <span>Seconds</span>

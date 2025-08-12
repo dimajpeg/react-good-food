@@ -17,4 +17,5 @@
 
 body {
   background: var(--background);
+  margin: 0;
 }
