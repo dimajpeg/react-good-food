@@ -1,25 +1,25 @@
 import React from "react";
-
+import styles from "./NftCard.module.css";
 const basePath = "./images/";
 
 function NftCard({ nft }) {
   return (
-    <li className="nft">
-      <img src={basePath + nft.img} alt={nft.title} />
-      <div className="content">
+    <li className={styles.nft}>
+      <img src={basePath + nft.img} alt={nft.title} className={styles.img} />
+      <div className={styles.content}>
         <h4>{nft.title}</h4>
-        <div className="author">
-          <img src={basePath + nft.author.ava} alt={nft.author.name} className="ava" />
-          <span className="name">{nft.author.name}</span>
+        <div className={styles.author}>
+          <img src={basePath + nft.author.ava} alt={nft.author.name} className={styles.ava} />
+          <span className={styles.name}>{nft.author.name}</span>
         </div>
-        <div className="row">
-          <div className="column">
+        <div className={styles.row}>
+          <div className={styles.leftcolumn}>
             <span>Price</span>
-            <span className="price">{nft.price}</span>
+            <span className={styles.price}>{nft.price}</span>
           </div>
-          <div className="column">
+          <div className={styles.rightcolumn}>
             <span>Highest Bid</span>
-            <span className="bid">{nft.bid}</span>
+            <span className={styles.bid}>{nft.bid}</span>
           </div>
         </div>
       </div>

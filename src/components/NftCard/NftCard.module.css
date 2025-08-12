@@ -1,0 +1,123 @@
+.nft {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0px;
+  border-radius: 20px;
+  width: 330px;
+  height: 469px;
+  min-width: 260px;
+  background: var(--background---secondary);
+}
+
+.nft .img {
+  border-radius: 20px 20px 0 0;
+  width: 330px;
+  height: 295px;
+}
+
+.nft .content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  /* padding: 20px 0px 25px 60px; */
+  gap: 5px;
+  /* gap: 10px; я cделал 10 вместо 25px пототму что не понимаю как правильно разделить (поитогу решил сделать растояние 5px и уже padding top и bottom 20px  */
+  padding: 20px 30px 25px 30px;
+  /* width: 330px; */
+  height: 173px;
+}
+
+.nft .content h4 {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  text-transform: capitalize;
+  color: var(--text);
+  margin: 0;
+}
+
+.nft .content .author {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 12px;
+  height: 24px;
+}
+
+.nft .content .author .ava {
+  width: 24px;
+  height: 24px;
+}
+
+.nft .content .author .name {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--text);
+  margin: 0;
+}
+
+.nft .content .row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  height: 43px;
+  /* gap: 20px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.nft .content .row .leftcolumn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  /* padding: 0px 21px 0px 0px; */
+  /* я убрал и правая часть встала на место */
+  width: 135px;
+  height: 43px;
+}
+
+.nft .content .row  span {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: var(--caption-label-text);
+  margin: 0;
+}
+
+.nft .content .row .rightcolumn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  width: 135px;
+  height: 43px;
+}
+
+.nft .content .row .leftcolumn .price {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--text);
+}
+
+.nft .content .row .rightcolumn .bid {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: right;
+  color: var(--text);
+}

@@ -1,0 +1,92 @@
+.discover {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 60px;
+  padding: 80px 0px;
+  height: 780px;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.container header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 463px;/* я это сделал вручную */
+  height: 91px;
+  margin-bottom: 60px;
+}
+
+.container hgroup {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  height: 91px;
+  min-width: 400px;
+}
+
+.container hgroup h2 {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: var(--text);
+  margin: 0;
+}
+
+.container hgroup p {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: var(--text);
+  margin: 0;
+}
+
+.container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 12px;
+
+  border: 2px solid var(--call-to-action);
+  border-radius: 20px;
+  /* padding: 0px 50px; */
+  width: 187px;
+  height: 60px;
+
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: var(--text);
+  background: var(--background);
+}
+
+.container button>img {
+  width: 20px;
+  height: 20px;
+}
+
+.container .nfts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 30px;
+  height: 469px;
+  padding: 0;
+}
