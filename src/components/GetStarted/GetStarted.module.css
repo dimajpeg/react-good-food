@@ -1,0 +1,72 @@
+.getstarted {
+  padding: 80px 0px;
+}
+
+.getstarted .container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.getstarted h2 {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: var(--text);
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.getstarted p {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: var(--text);
+  margin: 0;
+}
+
+.getstarted .steps {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.getstarted .steps .step {
+  gap: 20px;
+  border-radius: 20px;
+  padding: 10px 30px 30px 30px;
+  background: var(--background---secondary);
+}
+
+.getstarted .steps .step img {
+  width: 250px;
+  height: 250px;
+}
+
+.getstarted .steps .step h4 {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--text);
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.getstarted .steps .step p {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: var(--text);
+}

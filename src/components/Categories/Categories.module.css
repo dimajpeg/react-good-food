@@ -22,6 +22,7 @@
   text-transform: capitalize;
   color: var(--text);
   margin: 0;
+  margin-bottom: 60px;
 }
 
 .categories .cats {
