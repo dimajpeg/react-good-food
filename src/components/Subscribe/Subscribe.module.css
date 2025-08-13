@@ -1,0 +1,93 @@
+.subscribe {
+  padding: 80px 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 80px;
+  max-width: 1050px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 60px;
+  background: var(--background---secondary);
+  box-sizing: border-box;
+}
+
+.container>img {
+  border-radius: 20px;
+  width: 425px;
+  height: 310px;
+}
+
+.subscribe form {
+  width: 425px;
+}
+
+.subscribe h2 {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: var(--text);
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.subscribe p {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: var(--text);
+  margin: 0;
+}
+
+.subscribe .row {
+  background: var(--text);
+  border-radius: 20px;
+  width: 425px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.subscribe input {
+  padding: 16px 0px 16px 20px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  border: none;
+  background: none;
+}
+
+.subscribe button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 20px;
+  padding: 0px 50px;
+  width: 211px;
+  height: 60px;
+  background: var(--call-to-action);
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: var(--text);
+  border: none;
+}
+
+.subscribe button>img {
+  width: 20px;
+  height: 20px;
+}

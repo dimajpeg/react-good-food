@@ -5,7 +5,6 @@
 .getstarted .container {
   max-width: 1050px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 .getstarted h2 {
@@ -27,29 +26,36 @@
   text-transform: capitalize;
   color: var(--text);
   margin: 0;
+  margin-bottom: 50px;
 }
 
-.getstarted .steps {
+ .steps {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
   gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
 }
 
-.getstarted .steps .step {
+ .step {
   gap: 20px;
   border-radius: 20px;
   padding: 10px 30px 30px 30px;
   background: var(--background---secondary);
+  width: 330px;
+  height: 439px;
 }
 
-.getstarted .steps .step img {
+ .step img {
   width: 250px;
   height: 250px;
 }
 
-.getstarted .steps .step h4 {
+ .step h4 {
   font-family: var(--second-family);
   font-weight: 600;
   font-size: 22px;
@@ -62,7 +68,7 @@
   margin-bottom: 10px;
 }
 
-.getstarted .steps .step p {
+ .step p {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 16px;

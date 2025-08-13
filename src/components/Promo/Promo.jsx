@@ -33,9 +33,9 @@ function Promo({ data: promo = {} }) {
             <b className={styles.seconds}>59</b>
           </time>
           <div className={styles.row}>
-            <span>Hours</span>
-            <span>Minutes</span>
-            <span>Seconds</span>
+            <span className={styles.spanhours}>Hours</span>
+            <span className={styles.spanminutes}>Minutes</span>
+            <span className={styles.spanseconds}>Seconds</span>
           </div>
         </div>
       </div>
