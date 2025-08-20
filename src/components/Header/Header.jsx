@@ -1,5 +1,3 @@
-// Файл: src/components/Header/Header.jsx
-
 import React from 'react';
 import styles from './Header.module.css';
 
@@ -8,8 +6,7 @@ function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         <a href="/" className={styles.logo}>
-          <img src="/images/icons/logo.png" alt="logo" />
-          <h1>NFT Marketplace</h1>
+          <img src="/images/icons/logo.svg" alt="logo" />
         </a>
         <nav className={styles.nav}>
           <ul>
@@ -24,10 +21,13 @@ function Header() {
             </li>
           </ul>
           <button type="button" className={styles.button}>
-            {/* <img src="/images/icons/user.png" alt="logo" className={styles.user} /> */}
+            <img src="/images/icons/user.svg" alt="logo" className={styles.userIcon} />
             Sign Up
           </button>
         </nav>
+        <button className={styles.burgerButton}>
+          <img src="/images/icons/burger.svg" alt="Menu" />
+        </button>
       </div>
     </header>
   );
