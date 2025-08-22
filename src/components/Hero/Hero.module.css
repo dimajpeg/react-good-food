@@ -1,9 +1,9 @@
 .hero {
-  /* padding: 80px 115px; */
-  height: 544px;
+  /* height: 544px; */
+  padding: 80px 0px;
 }
 
-.hero .container {
+.container {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -15,7 +15,7 @@
 
 }
 
-.hero .content {
+.content {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -24,7 +24,7 @@
   height: 544px;
 }
 
-.hero .content h2 {
+.content h2 {
   font-family: var(--second-family);
   font-weight: 600;
   font-size: 67px;
@@ -34,7 +34,7 @@
   margin: 0;
 }
 
-.hero .content p {
+.content p {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 22px;
@@ -44,7 +44,7 @@
   margin: 0;
 }
 
-.hero .content button {
+.button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,10 +56,7 @@
   background: var(--call-to-action);
   border-radius: 20px;
   border: none;
-  /* Убираем стандартную рамку у кнопки */
   cursor: pointer;
-  /* Делаем курсор-ручку при наведении */
-
   font-family: var(--second-family);
   font-weight: 600;
   font-size: 16px;
@@ -68,7 +65,12 @@
   color: var(--text);
 }
 
-.hero .content ul {
+.button img {
+  width: 20px;
+  height: 20px;
+}
+
+.counters {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -83,7 +85,7 @@
 
 }
 
-.hero .content ul li {
+.counters li {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -95,7 +97,7 @@
   height: 77px;
 }
 
-.hero .content ul li b {
+.counters b {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 28px;
@@ -105,7 +107,7 @@
   margin: 0;
 }
 
-.hero .content ul li span {
+.counters span {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 23px;
@@ -115,7 +117,11 @@
   margin: 0;
 }
 
-.hero figure {
+.mobileFigure {
+  display: none;
+}
+
+.desktopFigure {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -126,13 +132,13 @@
   margin: 0;
 }
 
-.hero figure .img {
+.img {
   border-radius: 20px 20px 0 0;
   width: 510px;
   height: 401px;
 }
 
-.hero figure figcaption {
+.figcaption {
   display: flex;
   /* align-items: center; */
   justify-content: center;
@@ -145,7 +151,7 @@
   background: var(--background---secondary);
 }
 
-.hero figure figcaption b {
+.figcaption b {
   font-family: var(--second-family);
   font-weight: 600;
   font-size: 22px;
@@ -155,7 +161,7 @@
   margin: 0;
 }
 
-.hero figure figcaption .author {
+.author {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -166,7 +172,7 @@
   height: 24px;
 }
 
-.hero figure figcaption .author .ava {
+.ava {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -176,10 +182,201 @@
   height: 24px;
 }
 
-.hero figure figcaption .author span {
+.figcaption span {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   color: var(--text);
+}
+
+@media (max-width: 1279px) {
+  .hero {
+    /* height: 381px; */
+  }
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 30px;
+    width: 690px;
+    height: 381px;
+  }
+
+  .content {
+    gap: 20px;
+  }
+
+  .content h2 {
+    font-size: 38px;
+    line-height: 120%;
+  }
+
+  .content p {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .counters {
+    width: 330px;
+    height: 57px;
+  }
+
+  .counters li {
+    width: 90px;
+    height: 57px;
+  }
+
+  .counters b {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+  .counters span {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .desktopFigure {
+    width: 330px;
+    height: 330px;
+  }
+
+  .img {
+    width: 330px;
+    height: 221px;
+  }
+
+  .author {
+    width: 290px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 0px;
+    /* height: 786px; */
+  }
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    width: 315px;
+    height: 706px;
+  }
+
+  .content {
+    height: 706px;
+    gap: 30px;
+  }
+
+  .content h2 {
+    font-size: 28px;
+    line-height: 140%;
+  }
+
+  .content p {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .mobileFigure {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 0px;
+    width: 315px;
+    height: 315px;
+    margin: 0;
+  }
+
+  .img {
+    border-radius: 20px 20px 0 0;
+    width: 315px;
+    height: 206px;
+  }
+
+  .figcaption {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 0 0 20px 20px;
+    padding: 20px;
+    width: 315px;
+    height: 109px;
+    background: var(--background---secondary);
+  }
+
+  .figcaption b {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: var(--text);
+    margin: 0;
+  }
+
+  .author {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 12px;
+    border-radius: 20px;
+    width: 275px;
+    height: 24px;
+  }
+
+  .ava {
+    width: 24px;
+    height: 24px;
+  }
+
+  .figcaption span {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--text);
+  }
+
+  .button {
+    flex-direction: row;
+    width: 315px;
+  }
+
+  .counters {
+    width: 315px;
+    height: 57px;
+  }
+
+  .counters li {
+    width: 85px;
+    height: 57px;
+  }
+
+  .counters b {
+    font-size: 22px;
+    line-height: 160%;
+  }
+
+  .counters span {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .desktopFigure {
+    display: none;
+  }
 }

@@ -8,12 +8,21 @@ function Hero() {
         <div className={styles.content}>
           <h2>Discover digital art & Collect NFTs</h2>
           <p>NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
-          <button>
-            <img src="/images/icons/rocket.png" alt="rocket" />
+          <figure className={styles.mobileFigure}>
+            <img src="/images/promo/space-walking.png" alt="space-walking" className={styles.img} />
+            <figcaption className={styles.figcaption}>
+              <b>Space Walking</b>
+              <div className={styles.author}>
+                <img src="/images/avatars/animakid.png" alt="animakid" className={styles.ava} />
+                <span>Animakid</span>
+              </div>
+            </figcaption>
+          </figure>
+          <button className={styles.button}>
+            <img src="/images/icons/rocket.svg" alt="rocket" />
             Get Started
           </button>
-
-          <ul className="counters">
+          <ul className={styles.counters}>
             <li>
               <b>240k+</b>
               <span>Total Sale</span>
@@ -28,10 +37,10 @@ function Hero() {
             </li>
           </ul>
         </div>
-        
-        <figure>
+
+        <figure className={styles.desktopFigure}>
           <img src="/images/promo/space-walking.png" alt="space-walking" className={styles.img} />
-          <figcaption>
+          <figcaption className={styles.figcaption}>
             <b>Space Walking</b>
             <div className={styles.author}>
               <img src="/images/avatars/animakid.png" alt="animakid" className={styles.ava} />

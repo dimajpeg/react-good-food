@@ -20,12 +20,6 @@ function App() {
       .then(data => setData(data));
   }, []);
 
-  // useEffect( async () => {
-  //   const response = await fetch('data.json')
-  //   const data = await response.json()
-  //   setData(data);
-  // }, []);
-
   return (
     <div>
       <Header />
