@@ -54,7 +54,7 @@
   margin: 0;
 }
 
-.container button {
+.desktopButton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,7 +80,7 @@
   height: 20px;
 }
 
-.creators {
+.desktopCreators {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -89,4 +89,109 @@
   height: 774px;
   padding: 0;
   margin: 0;
+}
+
+.mobileCreators {
+  display: none;
+}
+.mobileButton {
+  display: none;
+}
+
+@media (max-width: 1279px) {
+  
+  .topcreators {
+    padding: 40px 0px;
+    height: 573px;
+    gap: 40px;
+  }
+
+  .container {
+    max-width: 690px;
+  }
+
+  .container header {
+    margin-bottom: 40px;
+    height: 93px;
+  }
+
+  .container hgroup {
+    height: 93px;
+  }
+
+  .container h2 {
+    font-size: 28px;
+    line-height: 140%;
+  }
+
+  .container p {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .desktopCreators {
+    height: 360px;
+    
+  }
+
+  
+  
+}
+
+@media (max-width: 480px) {
+  .topcreators{
+    padding: 40px 0px;
+    height: 893px;
+  }
+
+  .container {
+    max-width: 315px;
+  }
+
+  .container header {
+    margin-bottom: 40px;
+    height: 93px;
+  }
+
+  .container button {
+    width: 315px;
+  }
+
+  .desktopCreators {
+    display: none;
+  }
+
+  .desktopButton {
+    display: none;
+  }
+
+  .mobileCreators {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobileButton {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 12px;
+    width: 315px;
+    height: 60px;
+    border: 2px solid var(--call-to-action);
+    border-radius: 20px;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--text);
+    background: var(--background);
+  }
 }

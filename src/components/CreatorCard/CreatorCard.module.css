@@ -36,6 +36,7 @@
   height: 120px;
 }
 
+
 .name {
   margin-top: 20px;
   margin-bottom: 5px;
@@ -72,4 +73,56 @@
   font-size: 16px;
   line-height: 140%;
   color: var(--text);
+}
+
+@media (max-width: 1279px) {
+  .creator {
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    height: 100px;
+    width: 330px;
+  }
+
+  .position {
+    top: 10px;
+    left: 10px;
+  }
+
+  .ava {
+    width: 60px;
+    height: 60px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* ВЫРАВНИВАНИЕ ПО ЛЕВОМУ КРАЮ */
+    gap: 5px;
+  }
+  
+  .name {
+    margin: 0; /* Убираем лишние отступы */
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--text);
+  }
+  
+  .row {
+    display: flex;
+    gap: 10px;
+  }
+
+  
+
+}
+
+@media (max-width: 480px) {
+  .creator {
+    width: 315px;
+    height: 100px;
+  }
+
+  
 }
