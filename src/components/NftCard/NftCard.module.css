@@ -86,7 +86,7 @@
   height: 43px;
 }
 
-.nft .content .row  span {
+.nft .content .row span {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
@@ -120,4 +120,33 @@
   line-height: 140%;
   text-align: right;
   color: var(--text);
+}
+
+/* @media (max-width: 1279px) {} */
+
+@media (max-width: 480px) {
+  
+  .nft {
+    width: 315px;
+    height: 402px;
+  }
+
+  .nft .img {
+    width: 315px;
+    height: 238px;
+  }
+
+  .nft .content {
+    height: 164px;
+  }
+
+  .nft .content .row .leftcolumn .price {
+    font-size: 12px;
+    line-height: 110%;
+  }
+
+  .nft .content .row .rightcolumn .bid {
+    font-size: 12px;
+    line-height: 110%;
+  }
 }
