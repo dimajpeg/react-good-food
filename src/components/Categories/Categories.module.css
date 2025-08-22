@@ -33,3 +33,32 @@
   flex-wrap: wrap;
   gap: 30px;
 }
+
+@media (max-width: 1279px) {
+  .categories {
+    gap: 40px;
+    padding: 40px 0px;
+  }
+
+  .categories .container {
+    max-width: 690px;
+  }
+
+  .categories h2 {
+    font-size: 28px;
+    line-height: 140%;
+    margin-bottom: 40px;
+  }
+
+  
+}
+
+@media (max-width: 480px) {
+  .categories .cats {
+    gap: 20px;
+  }
+  
+  .categories .container {
+    max-width: 315px;
+  }
+}

@@ -23,10 +23,12 @@
   justify-content: center;
   flex-direction: row;
   gap: 10px;
-  backdrop-filter: blur(5px);/* стояло 15 я решил поставить 5px; */
+  backdrop-filter: blur(5px);
+  /* стояло 15 я решил поставить 5px; */
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px 20px 0 0;
-  height: 240px; /* высоту натыкал в браузере  */
+  height: 240px;
+  /* высоту натыкал в браузере  */
   width: 240px;
 
 }
@@ -49,58 +51,37 @@
   color: var(--text);
   margin: 0;
 }
-/* 
 
-.cat {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 0px;
-  border-radius: 20px;
-  width: 240px;
-  height: 316px;
-  background: var(--background---secondary);
+@media (max-width: 1279px) {
+  .cat {
+    width: 150px;
+  }
+
+  .cat .img {
+    height: 142px;
+  }
+
+  .cat i {
+    height: 142px;
+    width: 150px;
+  }
+
+  .cat h4 {
+    padding: 20px 20px 25px 20px;
+    height: 83px;
+    font-size: 16px;
+  }
 }
 
-.cat .img {
-  border-radius: 20px 20px 0 0;
-  height: 240px;
-  position: absolute;
-}
+@media (max-width: 480px) {
+  .cat {
+    width: 147px;
+  }
 
-.cat i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 10px;
-  backdrop-filter: blur(5px);
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px 20px 0 0;
-  height: 600px;
-  width: 240px;
-}
+  .cat i{
+    height: 142px;
+    width: 147px;
+  }
 
-.cat i .icon {
-  width: 100px;
-  height: 100px;
-  position: relative;
-}
 
-.cat h4 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 25px;
-  padding: 20px 30px 25px 30px;
-  height: 76px;
-  font-family: var(--second-family);
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 140%;
-  text-transform: capitalize;
-  color: var(--text);
-  margin: 0;
-} */
+}
