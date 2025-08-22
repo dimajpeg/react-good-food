@@ -1,10 +1,24 @@
 import React from "react";
 import styles from "./Trending.module.css";
+import useWindowWidth from "../../hooks/useWindowWidth";
 
 const basePath = "./images/";
 
 
 function Trending({ data: collections = [] }) {
+  const width = useWindowWidth();
+
+  let itemsToShow;
+  if (width >= 1280) { // Десктоп
+    itemsToShow = 3;
+  } else if (width >= 834) { // Планшет
+    itemsToShow = 2;
+  } else { // Мобильный
+    itemsToShow = 1;
+  }
+  
+  const visibleCollections = collections.slice(0, itemsToShow);
+
   return (
     <section className={styles.trending}>
       <div className={styles.container}>
@@ -12,7 +26,8 @@ function Trending({ data: collections = [] }) {
         <p>Checkout our weekly updated trending collection.</p>
 
         <ul>
-          {collections.map((collection) => (
+          {/* 5. Используем обрезанный массив для рендеринга */}
+          {visibleCollections.map((collection) => (
             <TrendingItem collection={collection} key={collection.title} />
           ))}
         </ul>
@@ -25,7 +40,7 @@ function TrendingItem({ collection }) {
   // const { images: [img, ...ribbon], count, title, author: { ava, name } } = collection;
 
   return (
-    <li>
+    <li className={styles.trendingItem}>
       <img src={basePath + collection.images[0]} alt="" />
       <div className={styles.ribbon}>
         <img src={basePath + collection.images[1]} alt="" />

@@ -1,5 +1,4 @@
 .hero {
-  /* height: 544px; */
   padding: 80px 0px;
 }
 
@@ -140,13 +139,11 @@
 
 .figcaption {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   flex-direction: column;
   gap: 10px;
   border-radius: 0 0 20px 20px;
   padding: 20px;
-  /* width: 510px; */
   height: 109px;
   background: var(--background---secondary);
 }
@@ -192,7 +189,6 @@
 
 @media (max-width: 1279px) {
   .hero {
-    /* height: 381px; */
   }
 
   .container {
@@ -259,7 +255,6 @@
 @media (max-width: 480px) {
   .hero {
     padding: 40px 0px;
-    /* height: 786px; */
   }
 
   .container {

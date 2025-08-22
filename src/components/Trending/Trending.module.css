@@ -40,31 +40,27 @@
 
 .trending ul {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: row;
   gap: 30px;
-  height: 525px;
   padding: 0;
   margin: 0;
+  list-style: none;
+  justify-content: center; 
 }
 
-.trending ul li {
+.trending .trendingItem {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: column;
   gap: 15px;
-  border-radius: 20px;
-  height: 525px;
+  width: 330px;
 }
 
-.trending ul li img {
+.trending .trendingItem img {
   border-radius: 20px;
   height: 330px;
 }
 
-.trending ul li .ribbon {
+.trending .trendingItem .ribbon {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -73,12 +69,12 @@
   height: 100px;
 }
 
-.trending ul li .ribbon img {
+.trending .trendingItem .ribbon img {
   border-radius: 20px;
   height: 100px;
 }
 
-.trending ul li .ribbon .count {
+.trending .trendingItem .ribbon .count {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,7 +93,7 @@
   color: var(--text);
 }
 
-.trending ul li .title {
+.trending .trendingItem .title {
   font-family: var(--second-family);
   font-weight: 600;
   font-size: 22px;
@@ -107,7 +103,7 @@
   margin: 0;
 }
 
-.trending ul li .author {
+.trending .trendingItem .author {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -117,15 +113,75 @@
   height: 24px;
 }
 
-.trending ul li .author img {
+.trending .trendingItem .author img {
   border-radius: 100px;
   height: 24px;
 }
 
-.trending ul li .author .name {
+.trending .trendingItem .author .name {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   color: var(--text);
+}
+
+@media (max-width: 1279px) {
+  .trending {
+    gap: 40px;
+    padding: 40px 0px;
+    height: 716px;
+  }
+
+  .trending .container {
+    max-width: 690px;
+  }
+
+  .trending h2 {
+    font-size: 28px;
+    line-height: 140%;
+  }
+
+  .trending p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .trending {
+    justify-content: center;
+    height: 718px;
+  }
+
+  .trending .container {
+    max-width: 315px;
+    justify-content: center;
+  }
+  
+  .trending .trendingItem {
+    width: 100%;
+    max-width: 330px; 
+  }
+  .trending .trendingItem img {
+    height: 315px;
+  }
+  
+  .trending .trendingItem .ribbon {
+    height: 95px;
+  }
+  
+  .trending .trendingItem .ribbon img {
+    height: 95px;
+  }
+  
+  .trending .trendingItem .author {
+    height: 20px;
+  }
+  
+  .trending .trendingItem .author img {
+    height: 20px;
+  }
 }
