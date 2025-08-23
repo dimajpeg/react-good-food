@@ -29,7 +29,7 @@
   margin-bottom: 50px;
 }
 
- .steps {
+.steps {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -38,10 +38,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  
+
 }
 
- .step {
+.step {
   gap: 20px;
   border-radius: 20px;
   padding: 10px 30px 30px 30px;
@@ -50,12 +50,12 @@
   height: 439px;
 }
 
- .step img {
+.step img {
   width: 250px;
   height: 250px;
 }
 
- .step h4 {
+.step h4 {
   font-family: var(--second-family);
   font-weight: 600;
   font-size: 22px;
@@ -68,11 +68,117 @@
   margin-bottom: 10px;
 }
 
- .step p {
+.step p {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   text-align: center;
   color: var(--text);
+}
+
+@media (max-width: 1279px) {
+  .getstarted {
+    padding: 40px 0px;
+  }
+
+  .getstarted .container {
+    max-width: 690px;
+    
+  }
+
+  .getstarted h2 {
+    font-size: 28px;
+    line-height: 140%;
+  }
+
+  .getstarted p {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .steps {
+    justify-content: center; /* Центрируем карточки */
+  }
+  
+
+  .step {
+
+    padding: 10px 20px 30px 20px;
+    width: 210px;
+    height: 320px;
+  }
+
+  .step img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .step h4 {
+    font-size: 16px;
+  }
+
+  .step p {
+    font-size: 12px;
+    line-height: 140%;
+  }
+}
+
+
+@media (max-width: 835px) {
+  .getstarted .container{
+    max-width: 315px;
+  }
+
+  .getstarted h2 {
+    font-size: 28px;
+    line-height: 140%;
+  }
+
+  .getstarted p {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  
+  .steps {
+    flex-direction: column; 
+    align-items: center; /* Центрируем карточки */
+    gap: 20px;
+  }
+
+  .step {
+    display: flex; /* Явно указываем flex для карточки */
+    flex-direction: row;
+    align-items: center;
+    gap: 20px; /* Отступ между картинкой и текстом */
+    width: 100%; /* На всю ширину */
+    height: 157px; /* Высота автоматическая */
+    padding: 20px; /* Уменьшаем отступы для мобилки */
+    box-sizing: border-box;
+  }
+
+  .step img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Отступ между h4 и p */
+  }
+
+  .step h4 {
+    font-size: 16px;
+    text-align: left;
+    margin: 0; /* Убираем отступы */
+  }
+
+  .step p {
+    font-size: 12px;
+    text-align: left;
+    line-height: 140%;
+    margin: 0; /* Убираем отступы */
+  }
+
 }
