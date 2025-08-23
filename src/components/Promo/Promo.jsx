@@ -18,7 +18,7 @@ function Promo({ data: promo = {} }) {
           </div>
 
           <h3>{promo.title}</h3>
-          <button type="button">
+          <button className={styles.desktopButton} type="button">
             <img src="/images/icons/eye.svg" alt="eye" />See NFT
           </button>
         </div>
@@ -38,6 +38,10 @@ function Promo({ data: promo = {} }) {
             <span className={styles.spanseconds}>Seconds</span>
           </div>
         </div>
+
+        <button className={styles.mobileButton} type="button">
+          <img src="/images/icons/eye.svg" alt="eye" />See NFT
+        </button>
       </div>
     </section>
   );

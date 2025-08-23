@@ -114,11 +114,11 @@
     gap: 10px;
   }
 
-  
+
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 835px) {
   .creator {
     width: 315px;
     height: 100px;
