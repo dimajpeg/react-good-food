@@ -22,11 +22,8 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  /* padding: 20px 0px 25px 60px; */
   gap: 5px;
-  /* gap: 10px; я cделал 10 вместо 25px пототму что не понимаю как правильно разделить (поитогу решил сделать растояние 5px и уже padding top и bottom 20px  */
   padding: 20px 30px 25px 30px;
-  /* width: 330px; */
   height: 173px;
 }
 
@@ -69,7 +66,6 @@
   justify-content: flex-start;
   flex-direction: row;
   height: 43px;
-  /* gap: 20px; */
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -80,8 +76,6 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 8px;
-  /* padding: 0px 21px 0px 0px; */
-  /* я убрал и правая часть встала на место */
   width: 135px;
   height: 43px;
 }
@@ -122,7 +116,7 @@
   color: var(--text);
 }
 
-/* @media (max-width: 1279px) {} */
+@media (max-width: 1279px) {}
 
 @media (max-width: 835px) {
 

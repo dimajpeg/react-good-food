@@ -8,9 +8,8 @@ function useWindowWidth() {
     
     window.addEventListener('resize', handleResize);
     
-    // Очистка при размонтировании компонента
     return () => window.removeEventListener('resize', handleResize);
-  }, []); // Пустой массив, чтобы эффект запустился один раз
+  }, []); 
 
   return width;
 }

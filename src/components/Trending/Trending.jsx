@@ -9,11 +9,11 @@ function Trending({ data: collections = [] }) {
   const width = useWindowWidth();
 
   let itemsToShow;
-  if (width >= 1280) { // Десктоп
+  if (width >= 1280) { 
     itemsToShow = 3;
-  } else if (width >= 834) { // Планшет
+  } else if (width >= 834) { 
     itemsToShow = 2;
-  } else { // Мобильный
+  } else { 
     itemsToShow = 1;
   }
   
@@ -26,7 +26,6 @@ function Trending({ data: collections = [] }) {
         <p>Checkout our weekly updated trending collection.</p>
 
         <ul>
-          {/* 5. Используем обрезанный массив для рендеринга */}
           {visibleCollections.map((collection) => (
             <TrendingItem collection={collection} key={collection.title} />
           ))}
@@ -37,7 +36,6 @@ function Trending({ data: collections = [] }) {
 }
 
 function TrendingItem({ collection }) {
-  // const { images: [img, ...ribbon], count, title, author: { ava, name } } = collection;
 
   return (
     <li className={styles.trendingItem}>

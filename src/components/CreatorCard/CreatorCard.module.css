@@ -97,12 +97,12 @@
   .info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* ВЫРАВНИВАНИЕ ПО ЛЕВОМУ КРАЮ */
+    align-items: flex-start; 
     gap: 5px;
   }
   
   .name {
-    margin: 0; /* Убираем лишние отступы */
+    margin: 0; 
     font-family: var(--second-family);
     font-weight: 600;
     font-size: 22px;

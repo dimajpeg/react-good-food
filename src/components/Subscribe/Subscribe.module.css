@@ -128,32 +128,24 @@
 
   .subscribe .row {
     flex-direction: column;
-    /* Ставим элементы друг под другом */
     gap: 16px;
-    /* Отступ между инпутом и кнопкой */
     width: 300px;
     height: auto;
-    /* Высота теперь автоматическая */
     background: none;
-    /* Убираем белый фон у обертки */
     margin-top: 20px;
   }
 
   .subscribe input {
     width: 100%;
-    /* Растягиваем на всю ширину */
     height: 46px;
     box-sizing: border-box;
-    /* Чтобы padding не ломал ширину */
     background: var(--text);
-    /* Белый фон теперь у самого инпута */
     border-radius: 20px;
     padding: 0 20px;
   }
 
   .subscribe button {
     width: 100%;
-    /* Кнопка тоже на всю ширину */
     height: 46px;
   }
 }

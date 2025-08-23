@@ -1,11 +1,9 @@
 .cat {
   display: flex;
-  /* align-items: center; */
   justify-content: flex-start;
   flex-direction: column;
   border-radius: 20px;
   width: 240px;
-  /* height: 316px; */
   background: var(--background---secondary);
 
 }
@@ -24,11 +22,9 @@
   flex-direction: row;
   gap: 10px;
   backdrop-filter: blur(5px);
-  /* стояло 15 я решил поставить 5px; */
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px 20px 0 0;
   height: 240px;
-  /* высоту натыкал в браузере  */
   width: 240px;
 
 }

@@ -7,9 +7,9 @@ function Discover({ data: nfts = [] }) {
   const width = useWindowWidth();
 
   let itemsToShow;
-  if (width < 1280) { // Для планшета и мобильного
+  if (width < 1280) { 
     itemsToShow = 2;
-  } else { // Для десктопа
+  } else { 
     itemsToShow = 3;
   }
 

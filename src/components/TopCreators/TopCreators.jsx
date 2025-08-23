@@ -6,13 +6,12 @@ import useWindowWidth from "../../hooks/useWindowWidth";
 function TopCreators({ data: creators = [] }) {
   const width = useWindowWidth();
 
-  // Решаем, сколько карточек показывать
   let itemsToShow;
-  if (width < 834) { // Мобильный
+  if (width < 834) { 
     itemsToShow = 5;
-  } else if (width < 1280) { // Планшет
+  } else if (width < 1280) { 
     itemsToShow = 6;
-  } else { // Десктоп
+  } else { 
     itemsToShow = 12;
   }
 

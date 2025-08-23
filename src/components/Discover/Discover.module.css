@@ -18,7 +18,6 @@
   justify-content: flex-start;
   flex-direction: row;
   gap: 463px;
-  /* я это сделал вручную */
   height: 91px;
   margin-bottom: 60px;
 }
@@ -62,7 +61,6 @@
 
   border: 2px solid var(--call-to-action);
   border-radius: 20px;
-  /* padding: 0px 50px; */
   width: 187px;
   height: 60px;
 
@@ -142,7 +140,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-    height: auto; /* Высота теперь автоматическая */
+    height: auto; 
     margin-bottom: 40px;
   }
 
@@ -151,8 +149,8 @@
   }
 
   .container .nfts {
-    flex-direction: column; /* Ставим карточки в столбик */
-    align-items: center; /* Центрируем их */
+    flex-direction: column; 
+    align-items: center; 
     gap: 20px;
     height: auto;
   }
@@ -165,7 +163,6 @@
     gap: 12px;
     border: 2px solid var(--call-to-action);
     border-radius: 20px;
-    /* padding: 0px 50px; */
     width: 315px;
     height: 60px;
     font-family: var(--second-family);
