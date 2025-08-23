@@ -1,21 +1,26 @@
-footer {
+.footer {
   background: var(--background---secondary);
-  border-radius:  0 0 20px 20px;
+  border-radius: 0 0 20px 20px;
 
 }
 
 .container {
   max-width: 1050px;
   margin: 0 auto;
+
 }
 
 .container .row {
   display: flex;
   justify-content: space-between;
   max-width: 100%;
+  gap: 30px;
   margin: 0 auto;
   padding: 40px 31px 30px;
-
+  padding-bottom: 30px;
+  /* Отступ до hr */
+  border-bottom: 1px solid var(--caption-label-text);
+  /* Заменяем hr на border */
 }
 
 .column {}
@@ -203,7 +208,7 @@ footer {
 .nft .row {
   display: flex;
   justify-content: space-between;
-  
+
 }
 
 .nft .column {
@@ -239,4 +244,95 @@ footer {
   font-size: 16px;
   line-height: 140%;
   color: var(--text);
+}
+
+@media (max-width: 1023px) {
+  .footer {
+    background: var(--background---secondary);
+    /* Добавляем боковые отступы */
+    border-radius: 0px;
+  }
+
+  .container {
+    max-width: 690px;
+    /* Контейнер теперь на всю ширину */
+  }
+
+  /* ГЛАВНОЕ ИЗМЕНЕНИЕ: делаем колонки вертикальными */
+  .container .row {
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+    padding: 40px 0px 30px;
+  }
+
+
+  /* Увеличиваем ширину текста и формы, чтобы они выглядели лучше */
+  .column p,
+  .container form p {
+    width: auto;
+    /* Убираем фиксированную ширину */
+    max-width: 330px;
+    /* Но ограничиваем, чтобы не было слишком длинных строк */
+  }
+
+  .subscribe {
+    width: 100%;
+    /* Растягиваем на всю ширину */
+    max-width: 420px;
+  }
+
+  .container>p {
+    margin: 0px;
+    margin-top: 20px;
+  }
+
+  .nft {
+    display: none;
+    /* Скрываем карточку NFT */
+  }
+}
+
+
+@media (max-width: 835px) {
+  @media (max-width: 834px) {
+    .footer {
+      padding: 40px 20px;
+      /* Уменьшаем боковые отступы */
+    }
+
+    .row {
+      /* На мобильном каждая колонка - это отдельный блок */
+      /* flex-direction: column; уже задан для планшета */
+    }
+
+    /* Делаем так, чтобы текст и форма не были слишком широкими */
+    .column p,
+    .container form p {
+      max-width: none;
+      /* Убираем ограничение с планшета */
+      width: 100%;
+    }
+
+    /* --- Адаптив для формы подписки --- */
+    .subscribe {
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+      height: auto;
+      background: none;
+    }
+
+    .subscribe input {
+      width: 100%;
+      height: 46px;
+      box-sizing: border-box;
+      padding: 0 20px;
+    }
+
+    .subscribe button {
+      width: 100%;
+      height: 46px;
+    }
+  }
 }

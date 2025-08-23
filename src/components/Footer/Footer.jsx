@@ -7,7 +7,7 @@ function Footer({ data: footerData = {} }) {
   const author = footerData.author || {};
 
   return (
-    <footer>
+    <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.row}>
           <div className={styles.column}>
