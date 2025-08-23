@@ -29,12 +29,13 @@ The project was implemented based on a design from the Figma Community. You can 
 
 ### Tablet Version
 ![react-nft-marketplace-black vercel app_ (1) 2](https://github.com/user-attachments/assets/6689f435-6498-4727-b2fe-48f620e1b7e1)
+![react-nft-marketplace-black vercel app_ (1) 3](https://github.com/user-attachments/assets/a6f64019-e007-4d46-bb94-0f2533c2c516)
 
 
 
 ### Mobile Version
 ![react-nft-marketplace-black vercel app_ (2) 2](https://github.com/user-attachments/assets/587376d5-1af8-406a-ba97-6bcfee801f66)
-![react-nft-marketplace-black vercel app_ (2)](https://github.com/user-attachments/assets/60d388f5-fe5c-4708-b4e1-3c3facb4cb72)
+![react-nft-marketplace-black vercel app_ (3)](https://github.com/user-attachments/assets/b61ab65d-248e-4897-b84c-7634ff64a1d3)
 ![react-nft-marketplace-black vercel app_ (1)](https://github.com/user-attachments/assets/b17104c7-e1e0-46c8-ac05-afe141bff22f)
 ---
 
