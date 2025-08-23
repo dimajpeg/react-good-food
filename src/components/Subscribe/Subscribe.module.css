@@ -56,6 +56,7 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 40px;
+  padding: 0;
 }
 
 .subscribe input {
@@ -66,6 +67,7 @@
   line-height: 140%;
   border: none;
   background: none;
+  width: 100%;
 }
 
 .subscribe button {
@@ -85,9 +87,105 @@
   text-align: center;
   color: var(--text);
   border: none;
+  flex-shrink: 0;
 }
 
 .subscribe button>img {
   width: 20px;
   height: 20px;
+}
+
+@media (max-width: 1279px) {
+
+  .subscribe {
+    padding: 40px 0;
+  }
+
+  .container {
+    max-width: 690px;
+    gap: 30px;
+    padding: 40px 30px;
+  }
+
+  .container>img {
+    width: 300px;
+    height: 280px;
+  }
+
+  .subscribe form {
+    width: 300px;
+  }
+
+  .subscribe h2 {
+    font-size: 28px;
+    line-height: 140%;
+  }
+
+  .subscribe p {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .subscribe .row {
+    flex-direction: column;
+    /* Ставим элементы друг под другом */
+    gap: 16px;
+    /* Отступ между инпутом и кнопкой */
+    width: 300px;
+    height: auto;
+    /* Высота теперь автоматическая */
+    background: none;
+    /* Убираем белый фон у обертки */
+    margin-top: 20px;
+  }
+
+  .subscribe input {
+    width: 100%;
+    /* Растягиваем на всю ширину */
+    height: 46px;
+    box-sizing: border-box;
+    /* Чтобы padding не ломал ширину */
+    background: var(--text);
+    /* Белый фон теперь у самого инпута */
+    border-radius: 20px;
+    padding: 0 20px;
+  }
+
+  .subscribe button {
+    width: 100%;
+    /* Кнопка тоже на всю ширину */
+    height: 46px;
+  }
+}
+
+
+@media (max-width: 835px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 315px;
+    gap: 30px;
+    background: none;
+    padding: 0;
+  }
+
+  .container>img {
+    width: 315px;
+    height: 255px;
+  }
+
+  .subscribe form {
+    width: 315px;
+  }
+
+  .subscribe .row {
+    width: 100%;
+  }
+
+  .subscribe p {
+    margin-bottom: 40px;  
+  }
+
 }
